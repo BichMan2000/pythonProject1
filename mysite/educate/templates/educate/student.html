@@ -1,0 +1,9 @@
+{% extends "pages/base.html" %}
+{% block title %}{% endblock %}
+{% block content %}
+<h1>Trang User</h1>
+<!--<h3><a href="student/{{student.id}}">{{users.name}}</a> </h3>
+<img src="{{student.image.url}}" width="500px" height="300px" />
+<h6>on{{student.date}}</h6>-->
+{{student.body|safe|linebreaks}}
+{% endblock %}

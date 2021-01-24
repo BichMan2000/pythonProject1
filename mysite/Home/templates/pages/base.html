@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TIN HOC-NGOAI NGU</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        ul.dropdown-menu {
+
+
+
+        }
+         .search-container {
+  float: right;
+}
+
+ input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+ .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+ .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+   .search-container {
+    float: none;
+  }
+   input[type=text],.search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  input[type=text] {
+    border: 0px solid #ccc;
+  }
+
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><p>TIN HOC-NGOAI NGU</p></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">TRANG CHỦ</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">HỌC VIÊN<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/educate">Học viên tin học</a></li>
+                        <li><a href="#">Học viên ngoại ngữ</a></li>
+                    </ul>
+                </li>
+                <li><a href="/course">KHÓA HỌC</a></li>s
+                <li><a href="/introduce">GIỚI THIỆU</a></li>
+                <li><a href="/contact">LIÊN HỆ</a></li>
+                <li><a href="/register" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li>
+                    <div class="search-container">
+                        <form action="/">
+                            <input name="search" placeholder="Search.." type="text">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+
+</body>
+</html>

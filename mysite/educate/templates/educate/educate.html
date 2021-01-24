@@ -1,0 +1,8 @@
+{% extends "pages/base.html" %}
+{% block title %}EDUACTE{% endblock %}
+{% block content %}
+{% for Student in student %}
+<h4>{{Student.date|date:"d-m-Y"}}<a href="/educate/{{Student.id}}">{{Student.title}}</a> </h4>
+<img src="{{Student.image.url}}" width="500px" height="300px" />
+{% endfor %}
+{% endblock %}

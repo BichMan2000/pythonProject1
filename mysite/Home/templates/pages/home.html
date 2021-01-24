@@ -1,0 +1,99 @@
+{% extends "pages/base.html" %}
+<title>{% block title %}Home{% endblock %}</title>
+
+<body>
+{% block content %}
+
+    <div class="content">
+    <div class="carousel slide" data-ride="carousel" id="myCarousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+            <li data-slide-to="1" data-target="#myCarousel"></li>
+            <li data-slide-to="2" data-target="#myCarousel"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+                <img alt="Los Angeles" src="static/images/slide.jpg" style="width:1200px; height:400px">
+                <div class="carousel-caption">
+                    <h3>Home</h3>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img alt="Chicago" src="static/images/ruby.jpg" style="width:1200px; height:400px">
+                <div class="carousel-caption">
+                    <h3>RUBY</h3>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img alt="New York" src="static/images/hone.png" style="width:1200px; height:400px">
+                <div class="carousel-caption">
+                    <h3>Languages</h3>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" data-slide="prev" href="#myCarousel">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" data-slide="next" href="#myCarousel">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
+        <div id="band" class="container text-center">
+  <h3>TRANG CHU</h3>
+  <p><em>We love music!</em></p>
+  <p>Noi dung trang chu</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="static/images/tinhoc3.png" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p>Guitarist and Lead Vocalist</p>
+        <p>Loves long walks on the beach</p>
+        <p>Member since 1988</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="static/images/tinhoc3.png" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>Drummer</p>
+        <p>Loves drummin'</p>
+        <p>Member since 1988</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="static/images/tinhoc3.png" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>Bass player</p>
+        <p>Loves math</p>
+        <p>Member since 2005</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
